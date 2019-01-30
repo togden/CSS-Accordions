@@ -1,0 +1,120 @@
+html {
+    width: 100%;
+    height: 100%;
+    perspective: 900;
+    overflow-y: scroll;
+    background-color: #dce7eb;
+    font-family: "Titillium Web", sans-serif;
+    color: rgba(48, 69, 92, 0.8);
+}
+
+body {
+    min-height: 0;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin: 90px 0;
+    transform: translate(-50%, 0);
+    background-color: #fefffa;
+    max-width: 650px;
+    padding: 30px;
+}
+
+
+p {
+    overflow: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+    z-index: 2;
+    margin: 0;
+    display: list-item;     
+    list-style: initial;      
+    list-style-position: outside;
+    transition: all 0.2s ease-in-out;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20;
+}
+
+ul li > ul {
+    list-style: none;
+    padding: 0 0 0 1em;
+    margin: 20;
+}
+
+ul li {
+    position: relative;
+    padding: 0.25em 0;
+    margin: 0;
+}
+
+ul li > ul li:last-of-type {
+    padding:0;
+}
+
+ul li input[type=checkbox] {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 1.5em;
+    z-index: 1;
+    opacity: 0;
+    margin:0;
+    padding: 0;
+}
+
+ul li input[type=checkbox]:checked ~ p {
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, -5%);
+
+}
+
+.expand-label {
+    display:inline-block;
+    font-size: 1em;
+    position: relative;
+    border-bottom: dashed 1px rgba(0,0,0,.8);
+    height: 1em;
+    padding-top: 0.25em;
+}
+
+
+input[type=checkbox]:checked ~ .expand-label:after{
+    content: "See More"; 
+
+}
+
+
+input[type=checkbox] ~ .expand-label:after{
+    content: "See Less"; 
+
+}
+
+
+/* These are the icons preceeding the open and close links. They can be 
+changed to different characters, styled, or removed altogether */
+
+input[type=checkbox]:checked ~ .expand-icon:after{
+    content: "+ "; 
+    font-weight: bold;
+
+}
+
+
+input[type=checkbox] ~ .expand-icon:after{
+    content: "- "; 
+    font-weight: bold;
+
+}
+
+
+
+
