@@ -2,18 +2,6 @@
 A simple and elegant solution for accordion elements using only HTML and CSS. Create collapsible bulleted lists without JavaScript.
 
 
-<!DOCTYPE html>
-<html>
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Messin' With Accordions</title>
-        <meta name="description" content="An interactive getting started guide for Brackets.">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-
         <h1>CSS + HTML only Accordion Element</h1>
         <ul>
             <li>
@@ -66,5 +54,3 @@ A simple and elegant solution for accordion elements using only HTML and CSS. Cr
             </li>
 
         </ul>
-    </body>
-</html>
