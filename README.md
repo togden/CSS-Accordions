@@ -9,6 +9,7 @@ Based on the excellent ['CSS + HTML only Accordion Elements'](https://codepen.io
 * Create accordion elements within bulleted lists using only CSS and HTML. This is ideal for situations where JavaScript must be avoided (for example, on the basic hosting plan from Squarespace)
 * Uses a simple text label to open/close the accordion, and updates the label to reflect the current status of the element (open or closed)
 * Allows for identation of nested elements
+* Only requires a minimal number of specialized CSS classes in order to function
 
 ### How it Works
 
